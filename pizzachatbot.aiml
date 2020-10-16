@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>Hello</pattern>
+	    <template>Hey! I'm Mycroft. Welcome to 221B Pizza Cafe! How may I help you today?</template>
+    </category>
+    
+    
+    <category>
+        <pattern>* order *</pattern>
+        <template>Sure, what kind of pizza would you like to eat today?</template>
+    </category>
+    
+    <category>
+        <pattern>* menu *</pattern>
+        <template>Would you want to try Vegetarian or Non-Vegetarian?</template>
+    </category>
+    
+    <category>
+        <pattern>veg</pattern>
+        <template>We have the following flavous.
+        <ul>
+            <li>Margherita</li>
+            <li>Double Cheese Margherita</li>
+            <li>Farm House</li>
+            <li>Peppy Paneer</li>
+            <li>Mexican Green Wave</li>
+            <li>Deluxe Veggie</li>
+            <li>Veg Extravaganza</li>
+            <li>Indi Tandoori Paneer</li>
+        </ul>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* margherita *</pattern>
+        <template>
+            <card>
+                <image>https://www.dominos.co.in/files/items/Margherit.jpg</image>
+                <title>Margherita Pizza</title>
+                <subtitle>A hugely popular margherita, with a deliciously tangy single cheese topping!</subtitle>
+            </card>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* double cheese margherita *</pattern>
+        <template>
+            <card>
+                <image>https://www.dominos.co.in/files/items/Double_Cheese_Margherita.jpg</image>
+                <title>Double Cheese Margherita Pizza</title>
+                <subtitle>The ever-popular Margherita, loaded with extra cheese... The goodness of it!</subtitle>
+            </card>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* farm house *</pattern>
+        <template>
+            <card>
+                <image>https://www.dominos.co.in/files/items/Farmhouse.jpg</image>
+                <title>Farm House</title>
+                <subtitle>A pizza that goes ballistic on veggies! Check out this mouth watering overload of crunchy, crisp capsicum, succulent mushrooms and fresh tomatoes!</subtitle>
+            </card>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* peppy paneer *</pattern>
+        <template>
+            <card>
+                <image>https://www.dominos.co.in/files/items/Peppy_Paneer.jpg</image>
+                <title>Peppy Paneer</title>
+                <subtitle>Chunky paneer with crisp capsicum and spicy red pepper - quite a mouthful!</subtitle>
+            </card>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* mexican green wave *</pattern>
+        <template>
+            <card>
+                <image>https://www.dominos.co.in/files/items/Mexican_Green_Wave.jpg</image>
+                <title>Mexican Green Wave</title>
+                <subtitle>A pizza loaded with crunchy onions, crisp capsicum, juicy tomatoes and jalapeno with a liberal sprinkling of exotic Mexican herbs!</subtitle>
+            </card>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* deluxe veggie *</pattern>
+        <template>
+            <card>
+                <image>https://www.dominos.co.in/files/items/Deluxe_Veggie.jpg</image>
+                <title>Deluxe Veggie</title>
+                <subtitle>For a vegetarian looking for a BIG treat that goes easy on the spices, this one's got it all.. The onions, the capsicum, those delectable mushrooms - with paneer and golden corn to top it all.</subtitle>
+            </card>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>* indi tandoori paneer *</pattern>
+        <template>
+            <card>
+                <image>https://www.dominos.co.in/files/items/IndianTandooriPaneer.jpg</image>
+                <title>Indi Tandoori Paneer</title>
+                <subtitle>It is hot. It is spicy. It is oh-so-Indian. Tandoori paneer with capsicum, red paprika, and mint mayo!</subtitle>
+            </card>
+        </template>
+    </category>
+    
+</aiml>
