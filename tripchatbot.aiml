@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>tell me about *</pattern>
+	    <template>
+	        <think><set name = "blank"><star/></set></think>
+	        Here's some information about <formal><star/></formal>
+	        <button>
+	            <text>Click me</text>
+	            <url>https://en.wikipedia.org/wiki/<star/></url>
+	        </button>
+	    </template>
+    </category>
+    
+    <category>
+	    <pattern>show me a map of *</pattern>
+	    <template>
+	        <think><set name = "blank"><star/></set></think>
+	        Here's a Google Maps layout of <formal><star/></formal>
+	        <button>
+	            <text>Click me</text>
+	            <url>https://www.google.co.in/maps?q=<star/></url>
+	        </button>
+	    </template>
+    </category>
+    
+    <category>
+	    <pattern>what is the weather in *</pattern>
+	    <template>
+	        <think><set name = "blank"><star/></set></think>
+	        Here's the weather report of <formal><star/></formal>
+	        <button>
+	            <text>Click me</text>
+	            <url>https://www.accuweather.com/en/search-locations?query=<star/></url>
+	        </button>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>tell me about it</pattern>
+        <template>
+            <condition name = "blank">
+                <li value = "*"><srai>Tell me about <get name = "blank"/></srai></li>
+                <li>What can I tell you about?</li>
+            </condition>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>tell me about the weather there</pattern>
+        <template>
+            <condition name = "blank">
+                <li value = "*"><srai>what is the weather in <get name = "blank"/></srai></li>
+                <li>Weather where?</li>
+            </condition>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>show me its map</pattern>
+        <template>
+            <condition name = "blank">
+                <li value = "*"><srai>show me a map of <get name = "blank"/></srai></li>
+                <li>Which map?</li>
+            </condition>
+        </template>
+    </category>
+</aiml>
